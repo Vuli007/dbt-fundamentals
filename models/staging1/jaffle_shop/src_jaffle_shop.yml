@@ -5,7 +5,7 @@ sources:
     database: raw
     schema: jaffle_shop
     tables:
-      - name: customers
+      - name: customers1
         description: Raw customers data
         columns:
           - name: id
@@ -14,7 +14,7 @@ sources:
               - unique
               - not_null
 
-      - name: orders
+      - name: orders1
         description: Raw orders table
         columns:
           - name: id
