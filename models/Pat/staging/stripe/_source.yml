@@ -1,7 +1,7 @@
 version: 2
 
-sources:
+sources: 
   - name: stripe
     database: raw
     tables:
-      - name: payment1
+      - name: payment
