@@ -1,0 +1,53 @@
+version: 2
+models:
+  - name: dim_tos
+    description: ""
+    columns:
+      - name: RECORD_ID
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: LOAN_ACCOUNT_NO
+        description: "Loan Account Number"
+        meta:
+          is_sensitive: true
+          masking_policy: bank
+      - name: PINSTID
+        description: "Foreign Key"
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: OLD_TOTAL_DUES
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: INTEREST
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: PENALTY
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: CALCULATED_DATE
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+          type: DateTime<'Y-m-d'>
+      - name: NEW_TOTAL_DUES
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: CLOSING_BALANCE
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+
+
