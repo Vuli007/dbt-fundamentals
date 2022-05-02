@@ -21,7 +21,7 @@ models:
       - name: prospect_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: activity_status
         description: ""
@@ -46,17 +46,17 @@ models:
       - name: time_spent
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: workflow_status
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: created_on
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: created_by
         description: ""
@@ -66,7 +66,7 @@ models:
       - name: created_by_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: mx_custom_1
         description: ""
@@ -86,10 +86,10 @@ models:
       - name: mx_custom_4
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: mx_custom_5
-        description: Primary key
+        description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
@@ -99,7 +99,7 @@ models:
           is_sensitive: false
           masking_policy: ""
       - name: mx_custom_7
-        description: Primary key
+        description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
@@ -131,7 +131,7 @@ models:
       - name: mx_custom_13
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: mx_custom_14
         description: ""
@@ -141,11 +141,11 @@ models:
       - name: mx_custom_15
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: status
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       

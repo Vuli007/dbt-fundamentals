@@ -16,7 +16,7 @@ models:
       - name: lead_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: old_value
         description: ""
@@ -41,7 +41,7 @@ models:
       - name: created_by_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: created_on
         description: ""

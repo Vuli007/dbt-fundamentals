@@ -11,7 +11,7 @@ models:
       - name: loan_account_no
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: payment_mode
         description: ""
@@ -36,21 +36,21 @@ models:
       - name: payment_deposit_date
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: allocation_user_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: allocation_sap_id
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: checker_status
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       

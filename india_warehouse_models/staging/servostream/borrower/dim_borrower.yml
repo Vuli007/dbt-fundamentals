@@ -11,7 +11,7 @@ models:
       - name: borrower_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: nature_of_facility
         description: ""
@@ -36,12 +36,12 @@ models:
       - name: penalty_rate
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: institution_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: trust_name
         description: ""
@@ -56,12 +56,12 @@ models:
       - name: final_loan_status
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: sanction_date
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: sanction_amount
         description: ""
@@ -81,21 +81,21 @@ models:
       - name: bank_lan
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: state
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: current_allocation_date
-        description: Primary key
+        description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
       - name: team_lead_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
      

@@ -31,12 +31,12 @@ models:
       - name: contact_by
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: contact_remarks
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: call_status
         description: ""

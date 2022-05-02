@@ -4,24 +4,24 @@ models:
     description: ""
     columns:
       - name: mx_last_contacted_action_code
-        description: Primary key
+        description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
       - name: mx_bank_lan
         description: ""
         meta:
-          is_sensitive: false
-          masking_policy: ""
+          is_sensitive: true
+          masking_policy: bank
       - name: mx_tls_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: mx_borrower_ac_holding_branch
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: mx_number_of_attempts
         description: ""
@@ -41,12 +41,12 @@ models:
       - name: mx_loan_account_number
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: mx_total_payment_till_now
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: mx_trust_name_bank_name
         description: ""
@@ -56,7 +56,7 @@ models:
       - name: mx_pinstid
         description: ""
         meta:
-          is_sensitive: true
+          is_sensitive: false
           masking_policy: address
       - name: mx_current_allocation_user_name
         description: ""
@@ -106,17 +106,17 @@ models:
       - name: first_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: last_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: email_address
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: prospect_stage
         description: ""
@@ -136,7 +136,7 @@ models:
       - name: mx_city
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: mx_loan_type
         description: ""
@@ -166,6 +166,6 @@ models:
       - name: owner_id_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       

@@ -26,12 +26,12 @@ models:
       - name: address_line1
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: address_line2
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: address_line3
         description: ""
@@ -41,7 +41,7 @@ models:
       - name: address_state
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: address_city
         description: ""
@@ -66,17 +66,17 @@ models:
       - name: stdcode
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: landlineno
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: customer_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: created_date
         description: ""
@@ -86,12 +86,12 @@ models:
       - name: date_of_birth
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: alternate_mobile
-        description: Primary key
+        description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: recordid
         description: ""
@@ -99,14 +99,14 @@ models:
           is_sensitive: false
           masking_policy: ""
       - name: maker_id
-        description: Primary key
+        description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
       - name: maker_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: checker_id
         description: ""
@@ -116,7 +116,7 @@ models:
       - name: checker_name
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: checker_status
         description: ""
@@ -126,7 +126,7 @@ models:
       - name: customer_panno
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: customer_aadhar_no
         description: ""
@@ -136,7 +136,7 @@ models:
       - name: alternate_mobile_2
         description: ""
         meta:
-          is_sensitive: false
+          is_sensitive: true
           masking_policy: ""
       - name: alternate_mobile_3
         description: ""
