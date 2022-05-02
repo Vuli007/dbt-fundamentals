@@ -1,0 +1,226 @@
+version: 2
+models:
+  - name: dim_users
+    description: ""
+    columns:
+      - name: user_id
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: first_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: middle_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: last_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: email_address
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: city
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: is_default_owner
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: is_administrator
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: is_agency_user
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: is_billing_user
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: time_zone
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: date_format
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: signature_html
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: signature_text
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: availability_status
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: team_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: is_checkin_enabled
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: is_checked_in
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: last_checked_on
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: last_checked_ip_address
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_1
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_2
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_3
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_4
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_5
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_6
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: mx_custom_7
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_8
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: mx_custom_9
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: mx_custom_10
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: status_code
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: created_by_id
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: created_by_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: created_on
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: modified_by_id
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: modified_by_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: modified_on
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: is_phone_call_agent
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: user_type
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: manager_id
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: manager_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: manager_email_address
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: is_email_sender
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: groups
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      

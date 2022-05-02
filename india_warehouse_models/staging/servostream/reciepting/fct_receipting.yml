@@ -1,0 +1,56 @@
+version: 2
+models:
+  - name: fct_receipting
+    description: ""
+    columns:
+      - name: pinstid
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: loan_account_no
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: payment_mode
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: payment_amount
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: payment_remarks
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: created_date
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: payment_deposit_date
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: allocation_user_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: allocation_sap_id
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: checker_status
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      

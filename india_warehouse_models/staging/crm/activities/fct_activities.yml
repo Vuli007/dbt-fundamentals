@@ -1,0 +1,151 @@
+version: 2
+models:
+  - name: fct_activities
+    description: ""
+    columns:
+      - name: prospect_activity_id
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: prospect_activity_auto_id
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: prospect_id
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: prospect_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: activity_status
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: activity_event
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: activity_event_name
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: activity_event_note
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: time_spent
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: workflow_status
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: created_on
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: created_by
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: created_by_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_1
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_2
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_3
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_4
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_5
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_6
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_7
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_8
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_9
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_10
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_11
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_12
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_13
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: mx_custom_14
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: mx_custom_15
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: status
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      

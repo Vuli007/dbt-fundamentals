@@ -1,0 +1,151 @@
+version: 2
+models:
+  - name: dim_borrower_address
+    description: ""
+    columns:
+      - name: pinstid
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: fork_id
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: type_of_address
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: kind_of_address
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: address_line1
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: address_line2
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: address_line3
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: address_state
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: address_city
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: address_pincode
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: mobile_no
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: email_id
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: stdcode
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: landlineno
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: customer_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: created_date
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: date_of_birth
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: alternate_mobile
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: recordid
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: maker_id
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: maker_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: checker_id
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: checker_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: checker_status
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: customer_panno
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: customer_aadhar_no
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: alternate_mobile_2
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: alternate_mobile_3
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: remarks
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+     

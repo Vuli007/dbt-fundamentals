@@ -1,0 +1,101 @@
+version: 2
+models:
+  - name: dim_borrower
+    description: ""
+    columns:
+      - name: pinstid
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: borrower_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: nature_of_facility
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: principle_o_s
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: record_creation_date
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: interest_rate
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: penalty_rate
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: institution_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: trust_name
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: loan_account_no
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: final_loan_status
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: sanction_date
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: sanction_amount
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: npa_date
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: collected_amount
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: bank_lan
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: state
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: current_allocation_date
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: team_lead_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+     

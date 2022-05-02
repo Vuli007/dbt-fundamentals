@@ -1,53 +1,51 @@
 version: 2
 models:
-  - name: dim_tos
+  - name: fct_lead_stage_change
     description: ""
     columns:
-      - name: RECORD_ID
+      - name: lead_stage_change_id
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: lead_id
         description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
-      - name: LOAN_ACCOUNT_NO
-        description: "Loan Account Number"
+      - name: lead_name
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: old_value
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: new_value
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: comment
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: created_by
+        description: ""
         meta:
           is_sensitive: true
-          masking_policy: bank
-      - name: PINSTID
-        description: "Foreign Key"
-        meta:
-          is_sensitive: false
-          masking_policy: ""
-      - name: OLD_TOTAL_DUES
+          masking_policy: address
+      - name: created_by_name
         description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
-      - name: INTEREST
+      - name: created_on
         description: ""
         meta:
-          is_sensitive: false
-          masking_policy: ""
-      - name: PENALTY
-        description: ""
-        meta:
-          is_sensitive: false
-          masking_policy: ""
-      - name: CALCULATED_DATE
-        description: ""
-        meta:
-          is_sensitive: false
-          masking_policy: ""
-          type: DateTime<'Y-m-d'>
-      - name: NEW_TOTAL_DUES
-        description: ""
-        meta:
-          is_sensitive: false
-          masking_policy: ""
-      - name: CLOSING_BALANCE
-        description: ""
-        meta:
-          is_sensitive: false
-          masking_policy: ""
-
-
+          is_sensitive: true
+          masking_policy: address
+      
