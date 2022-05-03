@@ -1,0 +1,101 @@
+version: 2
+models:
+  - name: dim_address
+    description: ""
+    columns:
+      - name: addresskey
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: addressid
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: addresscountry
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: addresscounty
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: addressregion
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: addresscity
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: addressstreet
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: streettype
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: block
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: appartment
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: floor
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: entrance
+        description: ""
+        meta:
+          is_sensitive: true
+          masking_policy: address
+      - name: postcode
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: nuts3code
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: addressregionclean
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: iscurrent
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: validfrom
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: validto
+        description: Primary key
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+      - name: createdjobkey
+        description: ""
+        meta:
+          is_sensitive: false
+          masking_policy: ""
+

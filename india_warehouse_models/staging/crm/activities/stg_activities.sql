@@ -1,0 +1,33 @@
+ Select 
+        prospect_activity_id,
+        prospect_activity_auto_id,
+        prospect_id,
+        trim(prospect_name) as prospect_name,
+        activity_status,
+        activity_event,
+        activity_event_name,
+        activity_event_note,
+        time_spent,
+        workflow_status,
+        created_on,
+        created_by,
+        created_by_name,
+        mx_custom_1,
+        mx_custom_2,
+        mx_custom_3,
+        mx_custom_4,
+        mx_custom_5,
+        mx_custom_6,
+        mx_custom_7,
+        mx_custom_8,
+        mx_custom_9,
+        mx_custom_10,
+        mx_custom_11,
+        mx_custom_12,
+        mx_custom_13,
+        mx_custom_14,
+        mx_custom_15,
+        status
+
+    from {{ source('crm', 'activities') }}
+
