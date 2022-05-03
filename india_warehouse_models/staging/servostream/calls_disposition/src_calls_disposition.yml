@@ -1,0 +1,50 @@
+version: 2
+
+sources: 
+  - name: servostream
+    database: raw 
+    tables:
+      - name: calls_disposition
+        description: ""
+        columns:
+          - name: record_id
+            description: Primary key
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: pinstid
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: action_code
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: action_date
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: next_action_date
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: contact_by
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: name
+          - name: contact_remarks
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: address
+          - name: call_status
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+     
