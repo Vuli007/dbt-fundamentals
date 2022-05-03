@@ -17,12 +17,12 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: mx_borrower_ac_holding_branch
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: mx_number_of_attempts
         description: ""
         meta:
@@ -36,33 +36,33 @@ models:
       - name: mx_number_of_call_backs
         description: ""
         meta:
-          is_sensitive: true
-          masking_policy: address
+          is_sensitive: false
+          masking_policy: ""
       - name: mx_loan_account_number
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: bank
       - name: mx_total_payment_till_now
         description: ""
         meta:
           is_sensitive: false
-          masking_policy: address
+          masking_policy: ""
       - name: mx_trust_name_bank_name
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: address
+          masking_policy: bank
       - name: mx_pinstid
         description: ""
         meta:
           is_sensitive: false
-          masking_policy: address
+          masking_policy: ""
       - name: mx_current_allocation_user_name
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: address
+          masking_policy: name
       - name: mx_tos_updated
         description: ""
         meta:
@@ -89,7 +89,7 @@ models:
           is_sensitive: false
           masking_policy: ""
       - name: mx_status
-        description: Primary key
+        description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
@@ -107,17 +107,17 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: last_name
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: email_address
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: email
       - name: prospect_stage
         description: ""
         meta:
@@ -131,33 +131,33 @@ models:
       - name: created_on
         description: ""
         meta:
-          is_sensitive: true
-          masking_policy: address
+          is_sensitive: false
+          masking_policy: ""
       - name: mx_city
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: mx_loan_type
         description: ""
         meta:
-          is_sensitive: true
-          masking_policy: address
+          is_sensitive: false
+          masking_policy: ""
       - name: mx_promised_to_pay_date
         description: ""
         meta:
-          is_sensitive: true
-          masking_policy: address
+          is_sensitive: false
+          masking_policy: ""
       - name: mx_case_id
         description: ""
         meta:
-          is_sensitive: true
-          masking_policy: address
+          is_sensitive: false
+          masking_policy: ""
       - name: mx_ots_agreed_date
         description: ""
         meta:
-          is_sensitive: true
-          masking_policy: address
+          is_sensitive: false
+          masking_policy: ""
       - name: mx_call_back_date
         description: ""
         meta:
@@ -167,5 +167,5 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       

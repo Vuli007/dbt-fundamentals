@@ -12,32 +12,32 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: middle_name
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: last_name
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: email_address
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: email
       - name: city
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: is_default_owner
         description: ""
         meta:
           is_sensitive: false
-          masking_policy: address
+          masking_policy: ""
       - name: is_administrator
         description: ""
         meta:
@@ -47,32 +47,32 @@ models:
         description: ""
         meta:
           is_sensitive: false
-          masking_policy: address
+          masking_policy: ""
       - name: is_billing_user
         description: ""
         meta:
           is_sensitive: false
-          masking_policy: address
+          masking_policy: ""
       - name: time_zone
         description: ""
         meta:
           is_sensitive: false
-          masking_policy: address
+          masking_policy: ""
       - name: date_format
         description: ""
         meta:
           is_sensitive: false
-          masking_policy: address
+          masking_policy: ""
       - name: signature_html
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: signature_text
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: availability_status
         description: ""
         meta:
@@ -82,14 +82,14 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: is_checkin_enabled
         description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
       - name: is_checked_in
-        description: Primary key
+        description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
@@ -99,10 +99,10 @@ models:
           is_sensitive: false
           masking_policy: ""
       - name: last_checked_ip_address
-        description: Primary key
+        description: ""
         meta:
-          is_sensitive: false
-          masking_policy: ""
+          is_sensitive: true
+          masking_policy: id_text
       - name: mx_custom_1
         description: ""
         meta:
@@ -122,7 +122,7 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: mx_custom_5
         description: ""
         meta:
@@ -131,8 +131,8 @@ models:
       - name: mx_custom_6
         description: ""
         meta:
-          is_sensitive: true
-          masking_policy: address
+          is_sensitive: false
+          masking_policy: ""
       - name: mx_custom_7
         description: ""
         meta:
@@ -147,17 +147,17 @@ models:
         description: ""
         meta:
           is_sensitive: false
-          masking_policy: address
+          masking_policy: ""
       - name: mx_custom_10
         description: ""
         meta:
           is_sensitive: false
-          masking_policy: address
+          masking_policy: ""
       - name: status_code
         description: ""
         meta:
           is_sensitive: false
-          masking_policy: address
+          masking_policy: ""
       - name: created_by_id
         description: ""
         meta:
@@ -167,7 +167,7 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: created_on
         description: ""
         meta:
@@ -181,10 +181,10 @@ models:
       - name: modified_by_name
         description: ""
         meta:
-          is_sensitive: false
-          masking_policy: ""
+          is_sensitive: true
+          masking_policy: name
       - name: modified_on
-        description: Primary key
+        description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
@@ -194,7 +194,7 @@ models:
           is_sensitive: false
           masking_policy: ""
       - name: user_type
-        description: Primary key
+        description: ""
         meta:
           is_sensitive: false
           masking_policy: ""
@@ -207,12 +207,12 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: manager_email_address
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: email
       - name: is_email_sender
         description: ""
         meta:

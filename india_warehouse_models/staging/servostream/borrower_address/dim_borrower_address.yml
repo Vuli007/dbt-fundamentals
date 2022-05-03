@@ -42,7 +42,7 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: address
       - name: address_city
         description: ""
         meta:
@@ -62,22 +62,22 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: address
+          masking_policy: email
       - name: stdcode
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: id_text
       - name: landlineno
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: telephone
       - name: customer_name
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: created_date
         description: ""
         meta:
@@ -87,12 +87,12 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: date
       - name: alternate_mobile
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: telephone
       - name: recordid
         description: ""
         meta:
@@ -107,7 +107,7 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: checker_id
         description: ""
         meta:
@@ -117,7 +117,7 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: checker_status
         description: ""
         meta:
@@ -127,25 +127,25 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: id_text
       - name: customer_aadhar_no
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: address
+          masking_policy: id_text
       - name: alternate_mobile_2
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: telephone
       - name: alternate_mobile_3
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: address
+          masking_policy: telephone
       - name: remarks
         description: ""
         meta:
-          is_sensitive: true
-          masking_policy: address
+          is_sensitive: false
+          masking_policy: ""
      

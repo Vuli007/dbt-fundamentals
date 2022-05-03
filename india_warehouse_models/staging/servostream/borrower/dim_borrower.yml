@@ -12,7 +12,7 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: nature_of_facility
         description: ""
         meta:
@@ -37,22 +37,22 @@ models:
         description: ""
         meta:
           is_sensitive: false
-          masking_policy: address
+          masking_policy: ""
       - name: institution_name
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: trust_name
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: address
+          masking_policy: name
       - name: loan_account_no
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: address
+          masking_policy: bank
       - name: final_loan_status
         description: ""
         meta:
@@ -82,12 +82,12 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: bank
       - name: state
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: address
       - name: current_allocation_date
         description: ""
         meta:
@@ -97,5 +97,5 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
      

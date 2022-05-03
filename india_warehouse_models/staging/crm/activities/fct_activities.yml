@@ -22,7 +22,7 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: activity_status
         description: ""
         meta:
@@ -37,7 +37,7 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: address
+          masking_policy: name
       - name: activity_event_note
         description: ""
         meta:
@@ -62,12 +62,12 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: address
+          masking_policy: name
       - name: created_by_name
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: mx_custom_1
         description: ""
         meta:
@@ -87,7 +87,7 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: mx_custom_5
         description: ""
         meta:

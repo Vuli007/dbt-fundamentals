@@ -32,7 +32,7 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: contact_remarks
         description: ""
         meta:

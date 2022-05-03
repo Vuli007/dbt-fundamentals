@@ -17,7 +17,7 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: old_value
         description: ""
         meta:
@@ -37,15 +37,15 @@ models:
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: address
+          masking_policy: name
       - name: created_by_name
         description: ""
         meta:
           is_sensitive: true
-          masking_policy: ""
+          masking_policy: name
       - name: created_on
         description: ""
         meta:
-          is_sensitive: true
-          masking_policy: address
+          is_sensitive: false
+          masking_policy: ""
       
