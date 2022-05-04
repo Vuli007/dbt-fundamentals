@@ -2,7 +2,8 @@ version: 2
 
 sources: 
   - name: servostream
-    database: raw 
+    database: raw
+    schema: servostream
     tables:
       - name: borrower
         description: ""
@@ -32,6 +33,7 @@ sources:
             meta:
               is_sensitive: false
               masking_policy: ""
+              type: DateTime<'Y-m-d'>
           - name: interest_rate
             description: ""
             meta:
@@ -102,4 +104,5 @@ sources:
             meta:
               is_sensitive: true
               masking_policy: name
-     
+
+ 
