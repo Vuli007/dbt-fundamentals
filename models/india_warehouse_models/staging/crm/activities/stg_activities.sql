@@ -1,17 +1,17 @@
  Select 
-        prospect_activity_id,
-        prospect_activity_auto_id,
-        prospect_id,
-        trim(prospect_name) as prospect_name,
-        activity_status,
-        activity_event,
-        activity_event_name,
-        activity_event_note,
-        time_spent,
-        workflow_status,
-        created_on,
-        created_by,
-        created_by_name,
+        prospectactivityid as prospect_activity_id,
+        prospectactivityautoid as prospect_activity_auto_id,
+        prospectid as prospect_id,
+        trim(prospectname) as prospect_name,
+        activitystatus as activity_status,
+        activityevent as activity_event,
+        trim(activityeventname) as activity_event_name,
+        trim(activityeventnote) as activity_event_note,
+        timespent as time_spent,
+        workflowstatus as workflow_status,
+        cast(createdon as date) as created_on,
+        createdby as created_by,
+        trim(createdbyname) as created_by_name,
         mx_custom_1,
         mx_custom_2,
         mx_custom_3,
@@ -27,7 +27,7 @@
         mx_custom_13,
         mx_custom_14,
         mx_custom_15,
-        status
+        trim(status) as status
 
     from {{ source('crm', 'activities') }}
 

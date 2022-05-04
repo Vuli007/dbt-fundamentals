@@ -62,7 +62,7 @@ sources:
             description: ""
             meta:
               is_sensitive: false
-              masking_policy: address
+              masking_policy: date
           - name: created_by
             description: ""
             meta:
