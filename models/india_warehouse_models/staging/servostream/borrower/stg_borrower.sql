@@ -1,4 +1,4 @@
- Select 
+Select 
     pinstid,
     trim(borrower_name) as borrower_name,
     trim(branch) as branch,
