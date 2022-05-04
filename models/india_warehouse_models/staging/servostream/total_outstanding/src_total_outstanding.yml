@@ -1,55 +1,55 @@
 version: 2
 
 sources: 
-  - name: crm
+  - name: servostream
     database: raw 
     tables:
-      - name: lead_stage_change
+      - name: total_outstanding
         description: ""
         columns:
-          - name: lead_stage_change_id
-            description: Primary key
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: lead_id
+          - name: record_id
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: lead_name
-            description: ""
+          - name: loan_account_no
+            description: "Loan Account Number"
             meta:
               is_sensitive: true
-              masking_policy: name
-          - name: old_value
+              masking_policy: bank
+          - name: pinstid
+            description: "Foreign Key"
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: old_total_dues
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: new_value
+          - name: interest
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: comment
+          - name: penalty
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: created_by
-            description: ""
-            meta:
-              is_sensitive: true
-              masking_policy: name
-          - name: created_by_name
-            description: ""
-            meta:
-              is_sensitive: true
-              masking_policy: name
-          - name: created_on
+          - name: calculated_date
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-      
+              type: DateTime<'Y-m-d'>
+          - name: new_total_dues
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: closing_balance
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""

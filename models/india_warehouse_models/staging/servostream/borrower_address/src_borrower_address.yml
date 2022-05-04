@@ -1,155 +1,156 @@
 version: 2
 
 sources: 
-  - name: crm
+  - name: servostream
     database: raw 
+    schema: servostream
     tables:
-      - name: activities
+      - name: borrower_address
         description: ""
         columns:
-          - name: prospect_activity_id
+          - name: pinstid
             description: Primary key
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: prospect_activity_auto_id
+          - name: fork_id
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: prospect_id
+          - name: type_of_address
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: prospect_name
+          - name: kind_of_address
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: address_line1
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: ""
+          - name: address_line2
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: ""
+          - name: address_line3
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: address
+          - name: address_state
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: address
+          - name: address_city
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: address
+          - name: address_pincode
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: address
+          - name: mobile_no
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: address
+          - name: email_id
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: email
+          - name: stdcode
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: id_text
+          - name: landlineno
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: telephone
+          - name: customer_name
             description: ""
             meta:
               is_sensitive: true
               masking_policy: name
-          - name: activity_status
+          - name: created_date
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: activity_event
+          - name: date_of_birth
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: date
+          - name: alternate_mobile
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: telephone
+          - name: recordid
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: activity_event_name
+          - name: maker_id
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: maker_name
             description: ""
             meta:
               is_sensitive: true
               masking_policy: name
-          - name: activity_event_note
+          - name: checker_id
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: time_spent
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: address
-          - name: workflow_status
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: address
-          - name: created_on
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: address
-          - name: created_by
+          - name: checker_name
             description: ""
             meta:
               is_sensitive: true
               masking_policy: name
-          - name: created_by_name
+          - name: checker_status
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: customer_panno
             description: ""
             meta:
               is_sensitive: true
-              masking_policy: name
-          - name: mx_custom_1
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_custom_2
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_custom_3
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_custom_4
+              masking_policy: id_text
+          - name: customer_aadhar_no
             description: ""
             meta:
               is_sensitive: true
-              masking_policy: name
-          - name: mx_custom_5
+              masking_policy: id_text
+          - name: alternate_mobile_2
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: telephone
+          - name: alternate_mobile_3
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: telephone
+          - name: remarks
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: mx_custom_6
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_custom_7
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_custom_8
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_custom_9
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_custom_10
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_custom_11
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_custom_12
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_custom_13
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: address
-          - name: mx_custom_14
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_custom_15
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: address
-          - name: status
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: address
-      
+     
