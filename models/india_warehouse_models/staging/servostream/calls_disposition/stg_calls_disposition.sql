@@ -10,6 +10,3 @@ Select
     trim(call_status) as call_status
 
 from {{ source('servostream', 'calls_disposition') }}
-
-
-

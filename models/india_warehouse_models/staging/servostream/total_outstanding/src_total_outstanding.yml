@@ -4,7 +4,7 @@ sources:
   - name: servostream
     database: raw 
     tables:
-      - name: fct_total_outstanding
+      - name: total_outstanding
         description: ""
         columns:
           - name: record_id

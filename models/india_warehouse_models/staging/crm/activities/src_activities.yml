@@ -3,6 +3,7 @@ version: 2
 sources: 
   - name: crm
     database: raw 
+    schema: crm
     tables:
       - name: activities
         description: ""

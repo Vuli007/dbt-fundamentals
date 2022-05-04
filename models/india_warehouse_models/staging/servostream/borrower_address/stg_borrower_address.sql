@@ -31,6 +31,3 @@ Select
     trim(remarks) as remarks
 
 from {{ source('servostream', 'borrower_address') }}
-
-
-
