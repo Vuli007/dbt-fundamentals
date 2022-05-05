@@ -41,7 +41,7 @@ sources:
             description: ""
             meta:
               is_sensitive: false
-              masking_policy: address
+              masking_policy: ""
           - name: call_status
             description: ""
             meta:

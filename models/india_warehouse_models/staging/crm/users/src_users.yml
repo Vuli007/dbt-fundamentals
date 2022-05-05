@@ -146,7 +146,7 @@ sources:
             description: ""
             meta:
               is_sensitive: false
-              masking_policy: address
+              masking_policy: ""
           - name: mx_custom_9
             description: ""
             meta:
