@@ -5,7 +5,7 @@
 with borrower as(
 
     select * from {{ ref('stg_borrower')}}
-    where portfolio_name <> 'RST'                   -- remove portfolio = RST
+    where portfolio_name != 'RST'                   -- remove portfolio = RST
     
 )
 
