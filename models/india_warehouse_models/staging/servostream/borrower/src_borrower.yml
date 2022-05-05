@@ -63,12 +63,12 @@ sources:
             description: ""
             meta:
               is_sensitive: false
-              masking_policy: address
+              masking_policy: ""
           - name: sanction_date
             description: ""
             meta:
               is_sensitive: false
-              masking_policy: address
+              masking_policy: ""
           - name: sanction_amount
             description: ""
             meta:

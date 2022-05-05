@@ -52,12 +52,12 @@ sources:
             description: ""
             meta:
               is_sensitive: false
-              masking_policy: address
+              masking_policy: ""
           - name: workflow_status
             description: ""
             meta:
               is_sensitive: false
-              masking_policy: address
+              masking_policy: ""
           - name: created_on
             description: ""
             meta:
@@ -137,7 +137,7 @@ sources:
             description: ""
             meta:
               is_sensitive: false
-              masking_policy: address
+              masking_policy: ""
           - name: mx_custom_14
             description: ""
             meta:
@@ -147,10 +147,10 @@ sources:
             description: ""
             meta:
               is_sensitive: false
-              masking_policy: address
+              masking_policy: ""
           - name: status
             description: ""
             meta:
               is_sensitive: false
-              masking_policy: address
+              masking_policy: ""
       
