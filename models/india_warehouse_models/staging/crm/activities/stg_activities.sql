@@ -9,6 +9,8 @@
         trim(activityeventnote) as activity_event_note,
         timespent as time_spent,
         workflowstatus as workflow_status,
+        createdon at time zone 'India Standard Time' as created_on_IST,
+        --convert_utc_to_ist(createdon) as created_on_IST,
         cast(createdon as date) as created_on,
         createdby as created_by,
         trim(createdbyname) as created_by_name,
