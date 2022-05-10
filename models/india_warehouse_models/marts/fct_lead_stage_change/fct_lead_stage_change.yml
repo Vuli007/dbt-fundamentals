@@ -1,51 +1,56 @@
 version: 2
 
 sources: 
-  - name: servostream
-    database: raw 
-    schema: servostream
+  - name: dbt_vvunivola
+    database: dbt 
+    schema: dbt_vvunivola
     tables:
-      - name: calls_disposition
+      - name: fct_lead_stage_change
         description: ""
         columns:
-          - name: record_id
-            description: Primary key
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: pinstid
+          - name: lead_stage_change_id
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: action_code
+          - name: lead_id
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: action_date
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: next_action_date
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: contact_by
+          - name: lead_name
             description: ""
             meta:
               is_sensitive: true
               masking_policy: name
-          - name: contact_remarks
+          - name: old_value
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: call_status
+          - name: new_value
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-     
+          - name: comment
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: created_by
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: name
+          - name: created_by_name
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: name
+          - name: created_on
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+      

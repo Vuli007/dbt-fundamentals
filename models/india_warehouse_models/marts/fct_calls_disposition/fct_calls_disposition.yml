@@ -1,15 +1,15 @@
 version: 2
 
 sources: 
-  - name: servostream
-    database: raw 
-    schema: servostream
+  - name: dbt_vvunivola
+    database: dbt 
+    schema: dbt_vvunivola
     tables:
-      - name: calls_disposition
+      - name: fct_calls_disposition
         description: ""
         columns:
           - name: record_id
-            description: Primary key
+            description: ""
             meta:
               is_sensitive: false
               masking_policy: ""

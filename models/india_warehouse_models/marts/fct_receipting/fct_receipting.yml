@@ -1,51 +1,61 @@
 version: 2
 
 sources: 
-  - name: servostream
+  - name: dbt_vvunivola
     database: raw 
-    schema: servostream
+    schema: dbt_vvunivola
     tables:
-      - name: calls_disposition
+      - name: fct_receipting
         description: ""
         columns:
-          - name: record_id
-            description: Primary key
-            meta:
-              is_sensitive: false
-              masking_policy: ""
           - name: pinstid
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: action_code
+          - name: loan_account_no
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: bank
+          - name: payment_mode
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: action_date
+          - name: payment_amount
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: next_action_date
+          - name: payment_remarks
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: contact_by
+          - name: created_date
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: payment_deposit_date
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: allocation_user_name
             description: ""
             meta:
               is_sensitive: true
               masking_policy: name
-          - name: contact_remarks
+          - name: allocation_sap_id
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: call_status
+          - name: checker_status
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-     
+          
