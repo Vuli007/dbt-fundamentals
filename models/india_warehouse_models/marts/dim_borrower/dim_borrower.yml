@@ -1,0 +1,108 @@
+version: 2
+
+sources: 
+  - name: dbt_vvunivola
+    database: dbt
+    schema: dbt_vvunivola
+    tables:
+      - name: dim_borrower
+        description: ""
+        columns:
+          - name: pinstid
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: borrower_name
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: name
+          - name: nature_of_facility
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: principle_o_s
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: record_creation_date
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+              type: DateTime<'Y-m-d'>
+          - name: interest_rate
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: penalty_rate
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: institution_name
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: name
+          - name: trust_name
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: name
+          - name: loan_account_no
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: bank
+          - name: final_loan_status
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: sanction_date
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: sanction_amount
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: npa_date
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: collected_amount
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: bank_lan
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: bank
+          - name: state
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: address
+          - name: current_allocation_date
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: team_lead_name
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: name
+
+ 

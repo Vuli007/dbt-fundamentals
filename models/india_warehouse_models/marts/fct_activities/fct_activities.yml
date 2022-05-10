@@ -1,99 +1,19 @@
 version: 2
 
 sources: 
-  - name: crm
-    database: raw 
-    schema: crm
+  - name: dbt_vvunivola
+    database: dbt 
+    schema: dbt_vvunivola
     tables:
-      - name: leads
+      - name: fct_activities
         description: ""
         columns:
-          - name: mx_last_contacted_action_code
+          - name: prospect_activity_id
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: mx_bank_lan
-            description: ""
-            meta:
-              is_sensitive: true
-              masking_policy: bank
-          - name: mx_tls_name
-            description: ""
-            meta:
-              is_sensitive: true
-              masking_policy: name
-          - name: mx_borrower_ac_holding_branch
-            description: ""
-            meta:
-              is_sensitive: true
-              masking_policy: name
-          - name: mx_number_of_attempts
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_system_generated_lan
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_number_of_call_backs
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_loan_account_number
-            description: ""
-            meta:
-              is_sensitive: true
-              masking_policy: bank
-          - name: mx_total_payment_till_now
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_trust_name_bank_name
-            description: ""
-            meta:
-              is_sensitive: true
-              masking_policy: bank
-          - name: mx_pinstid
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_current_allocation_user_name
-            description: ""
-            meta:
-              is_sensitive: true
-              masking_policy: name
-          - name: mx_tos_updated
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_amount_agreed_for_payment
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_principal_outstanding
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_type_of_loan_nature_of_facility
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_loan_category
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_status
+          - name: prospect_activity_auto_id
             description: ""
             meta:
               is_sensitive: false
@@ -103,32 +23,37 @@ sources:
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: prospect_auto_id
-            description: Primary key
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: first_name
+          - name: prospect_name
             description: ""
             meta:
               is_sensitive: true
               masking_policy: name
-          - name: last_name
-            description: ""
-            meta:
-              is_sensitive: true
-              masking_policy: name
-          - name: email_address
-            description: ""
-            meta:
-              is_sensitive: true
-              masking_policy: email
-          - name: prospect_stage
+          - name: activity_status
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: owner_id
+          - name: activity_event
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: activity_event_name
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: name
+          - name: activity_event_note
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: time_spent
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: workflow_status
             description: ""
             meta:
               is_sensitive: false
@@ -137,40 +62,95 @@ sources:
             description: ""
             meta:
               is_sensitive: false
-              masking_policy: ""
-          - name: mx_city
+              masking_policy: date
+          - name: created_by
             description: ""
             meta:
               is_sensitive: true
               masking_policy: name
-          - name: mx_loan_type
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_promised_to_pay_date
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_case_id
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_ots_agreed_date
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: mx_call_back_date
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: owner_id_name
+          - name: created_by_name
             description: ""
             meta:
               is_sensitive: true
               masking_policy: name
+          - name: mx_custom_1
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_2
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_3
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_4
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: name
+          - name: mx_custom_5
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_6
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_7
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_8
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_9
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_10
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_11
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_12
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_13
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_14
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: mx_custom_15
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: status
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
       

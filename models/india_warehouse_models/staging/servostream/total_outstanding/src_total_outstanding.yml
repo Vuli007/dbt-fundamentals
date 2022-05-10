@@ -3,6 +3,7 @@ version: 2
 sources: 
   - name: servostream
     database: raw 
+    schema: servostream
     tables:
       - name: total_outstanding
         description: ""

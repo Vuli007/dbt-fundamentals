@@ -29,6 +29,8 @@
         mx_custom_13,
         mx_custom_14,
         mx_custom_15,
+        right(DateTimeAdd("1900-01-01",[mx_Custom_3],"seconds"),8) as duration_of_call,  -- from Rahul converting seconds to minutes
+        CONVERT(VARCHAR(2), [mx_Custom_3] / 60 % 60) AS 'duration_of_call', -- converting seconds to minutes
         trim(status) as status
 
     from {{ source('crm', 'activities') }}

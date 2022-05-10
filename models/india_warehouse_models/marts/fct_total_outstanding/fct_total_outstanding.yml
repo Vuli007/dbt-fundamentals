@@ -1,51 +1,56 @@
 version: 2
 
 sources: 
-  - name: servostream
-    database: raw 
-    schema: servostream
+  - name: dbt_vvunivola
+    database: dbt 
+    schema: dbt_vvunivola
     tables:
-      - name: calls_disposition
+      - name: fct_total_outstanding
         description: ""
         columns:
           - name: record_id
-            description: Primary key
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: pinstid
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: action_code
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: action_date
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: next_action_date
-            description: ""
-            meta:
-              is_sensitive: false
-              masking_policy: ""
-          - name: contact_by
-            description: ""
+          - name: loan_account_no
+            description: "Loan Account Number"
             meta:
               is_sensitive: true
-              masking_policy: name
-          - name: contact_remarks
+              masking_policy: bank
+          - name: pinstid
+            description: "Foreign Key"
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: old_total_dues
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: call_status
+          - name: interest
             description: ""
             meta:
               is_sensitive: false
               masking_policy: ""
-     
+          - name: penalty
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: calculated_date
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+              type: DateTime<'Y-m-d'>
+          - name: new_total_dues
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: closing_balance
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""

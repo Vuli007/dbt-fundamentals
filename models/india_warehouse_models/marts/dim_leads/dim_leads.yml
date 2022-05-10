@@ -1,11 +1,11 @@
 version: 2
 
 sources: 
-  - name: crm
-    database: raw 
-    schema: crm
+  - name: dbt_vvunivola
+    database: dbt 
+    schema: dbt_vvunivola
     tables:
-      - name: leads
+      - name: dim_leads
         description: ""
         columns:
           - name: mx_last_contacted_action_code
