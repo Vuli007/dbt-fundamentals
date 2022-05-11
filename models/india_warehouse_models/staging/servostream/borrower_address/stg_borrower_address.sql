@@ -24,7 +24,7 @@ Select
     checker_id,
     trim(checker_name) as checker_name,
     trim(checker_status) as checker_status,
-    customer_panno,
+    customer_panno as customer_pan_number,
     customer_aadhar_no as customer_aadhar_number,
     alternate_mobile_2,
     alternate_mobile_3,

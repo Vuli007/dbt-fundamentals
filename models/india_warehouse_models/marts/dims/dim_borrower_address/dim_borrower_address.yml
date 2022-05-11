@@ -128,7 +128,7 @@ sources:
             meta:
               is_sensitive: false
               masking_policy: ""
-          - name: customer_panno
+          - name: customer_pan_number
             description: ""
             meta:
               is_sensitive: true

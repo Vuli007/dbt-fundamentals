@@ -9,7 +9,7 @@
         trim(activityeventnote) as activity_event_note,
         timespent as time_spent,
         workflowstatus as workflow_status,
-        createdon as created_on,
+        cast(createdon as datetime) as created_on,
         createdby as created_by,
         trim(createdbyname) as created_by_name,
         mx_custom_1,
