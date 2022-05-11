@@ -10,9 +10,11 @@ with borrower_address as(
 ),
 
 latest_record_id as (
+
     select *
     from borrower_address as borrower_1
     where record_id = 
+
         (	select max(record_id) as record_id                                                -- selecting the max record per pinstid
             from borrower_address as borrower_2 where borrower_1.pinstid = borrower_2.pinstid 
         )

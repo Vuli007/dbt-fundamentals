@@ -104,5 +104,10 @@ sources:
             meta:
               is_sensitive: true
               masking_policy: name
+          - name: portfolio_name
+            description: ""
+            meta:
+              is_sensitive: true
+              masking_policy: name
 
  

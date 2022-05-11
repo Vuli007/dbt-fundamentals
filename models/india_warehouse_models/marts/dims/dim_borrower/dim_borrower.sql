@@ -4,7 +4,10 @@
 
 with borrower as(
 
-    select * from {{ ref('stg_borrower')}}
+    select *,
+        trust_name as portfolio_name                -- derive field portfolio from field "trust_name"
+
+    from {{ ref('stg_borrower')}}
     where portfolio_name != 'RST'                   -- remove portfolio = RST
     
 )

@@ -8,7 +8,7 @@ Select
     interest_rate,
     penalty_rate,
     trim(institution_name) as institution_name,
-    trim(trust_name) as portfolio_name,                             -- derive field portfolio from field "trust_name"
+    trim(trust_name) as trust_name,                             
     trim(loan_account_no) as loan_account_no,
     trim(final_loan_status) as final_loan_status,
     cast(sanction_date as date) as sanction_date,
