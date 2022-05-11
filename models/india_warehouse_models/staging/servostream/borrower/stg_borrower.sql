@@ -4,7 +4,7 @@ Select
     trim(branch) as branch,
     nature_of_facility,
     principle_o_s,
-    cast(record_creation_date as date) as record_creation_date,
+    cast(record_creation_date as date) as record_creation_date,  -- default value is getdate() need to update as isnull function is unknown
     interest_rate,
     penalty_rate,
     trim(institution_name) as institution_name,
