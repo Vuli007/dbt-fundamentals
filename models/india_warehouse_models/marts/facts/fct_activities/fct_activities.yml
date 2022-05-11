@@ -153,4 +153,14 @@ sources:
             meta:
               is_sensitive: false
               masking_policy: ""
+          - name: created_on_ist
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: duration_of_call
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
       

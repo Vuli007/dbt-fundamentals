@@ -9,7 +9,7 @@
         trim(activityeventnote) as activity_event_note,
         timespent as time_spent,
         workflowstatus as workflow_status,
-        {{ convert_utc_to_ist('createdon') }} as created_on_ist,  -- converting utc time to India Standard Time as in the requirement from Rahul
+        createdon as created_on,
         createdby as created_by,
         trim(createdbyname) as created_by_name,
         mx_custom_1,
@@ -27,7 +27,6 @@
         mx_custom_13,
         mx_custom_14,
         mx_custom_15,
-        cast(mx_Custom_3 / 60 % 60 AS float) duration_of_call, -- converting seconds to minutes need clarifications - as float or as int
         trim(status) as status
 
     from {{ source('crm', 'activities') }}
