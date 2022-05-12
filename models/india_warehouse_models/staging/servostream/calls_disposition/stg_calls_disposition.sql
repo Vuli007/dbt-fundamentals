@@ -9,4 +9,6 @@ Select
     trim(contact_remarks) as contact_remarks,
     trim(call_status) as call_status
 
+    --take most recent remaks from most recent record id
+
 from {{ source('servostream', 'calls_disposition') }}
