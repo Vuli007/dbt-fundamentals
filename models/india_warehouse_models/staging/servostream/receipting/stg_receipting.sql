@@ -7,7 +7,7 @@ Select
     trim(payment_remarks) as payment_remarks,
     created_date,
     cast(payment_deposit_date as date) as payment_deposit_date,
-    trim(allocation_user_name) as trim,
+    trim(allocation_user_name) as allocation_user_name,
     allocation_sap_id,
     trim(checker_status) as checker_status
 
