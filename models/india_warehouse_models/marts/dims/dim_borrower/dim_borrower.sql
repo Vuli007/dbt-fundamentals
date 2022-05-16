@@ -10,7 +10,7 @@ with borrower as(
         when trust_name = 'Arcil Bajaj Finance - Personal Loans' then 'Arcil Bajaj-Personal'
         when trust_name = 'Arcil Bajaj Finance - SME Loans' then 'Arcil Bajaj-SME'
         when trust_name like '%Arcil%' AND trust_name like '%LOT 3%' then 'Arcil(Secured Cases)'
-        when trust_name like '%South Indian Bank%' then 'South Indian Bank' -- check diff
+        when trust_name like '%South Indian Bank%' then 'South Indian Bank' 
         when trust_name like '%arcil%' then 'Arcil'
         else trust_name end as Portfolio    --check caps
 
