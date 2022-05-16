@@ -22,7 +22,7 @@ with borrower as(
     
 ),
 
-client as (
+client as (                 -- check like vs contains from excel
 
     select *,
 
@@ -65,7 +65,7 @@ portfolio_type as (
         when Portfolio like 'Karur Vysysa' then 'Private Bank'
         else 'Others' end as portfolio_type
 
-    from portfolio
+    from client
 )
 
 Select * from portfolio_type
