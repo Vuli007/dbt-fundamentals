@@ -19,7 +19,6 @@ most_recent as (
         (	select max(calculated_date) as calculated_date                                                -- selecting the most recent pinstid
             from total_outstanding as tos_2 where tos_1.pinstid = tos_2.pinstid 
         )
-        --closing_balance = 
 )
 
 Select * from most_recent
