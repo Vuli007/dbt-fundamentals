@@ -1,0 +1,61 @@
+version: 2
+
+sources: 
+  - name: dbt_vvunivola
+    database: dbt 
+    schema: dbt_vvunivola
+    tables:
+      - name: dim_total_outstanding
+        description: ""
+        columns:
+          - name: record_id
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: loan_account_no
+            description: "Loan Account Number"
+            meta:
+              is_sensitive: true
+              masking_policy: bank
+          - name: pinstid
+            description: "Foreign Key"
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: old_total_dues
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: interest
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: penalty
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: calculated_date
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+              type: DateTime<'Y-m-d'>
+          - name: new_total_dues
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: closing_balance
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
+          - name: total_outstanding
+            description: ""
+            meta:
+              is_sensitive: false
+              masking_policy: ""
